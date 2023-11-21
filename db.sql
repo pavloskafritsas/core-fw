@@ -1,6 +1,6 @@
 -- MySQL dump 10.13  Distrib 8.0.28, for Linux (x86_64)
 --
--- Host: localhost    Database: kafritsas_erg3_db
+-- Host: localhost    Database: core_db
 -- ------------------------------------------------------
 -- Server version	8.0.28-0ubuntu0.20.04.3
 
@@ -16,10 +16,10 @@
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 -- Δημιουργία βάσης δεδομένων
-CREATE DATABASE `kafritsas_erg3_db` /*!40100 DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci */ /*!80016 DEFAULT ENCRYPTION='N' */;
+CREATE DATABASE `core_db` /*!40100 DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci */ /*!80016 DEFAULT ENCRYPTION='N' */;
 
 -- Χρήση της βάσης δεδομένων
-USE `kafritsas_erg3_db`;
+USE `core_db`;
 
 --
 -- Table structure for table `appointments`
