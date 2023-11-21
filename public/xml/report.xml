@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="/xml/report.xsl"?>
+<!DOCTYPE list [
+        <!ELEMENT list (Doctor|VaccinationCenter|Appointments)*>
+        <!ELEMENT Doctor (#PCDATA)>
+        <!ATTLIST Doctor
+                adt CDATA #REQUIRED
+                email CDATA #IMPLIED
+                first_name CDATA #REQUIRED
+                last_name CDATA #REQUIRED>
+        <!ELEMENT VaccinationCenter (#PCDATA)>
+        <!ATTLIST VaccinationCenter
+                address CDATA #REQUIRED
+                phone CDATA #REQUIRED
+                zip_code CDATA #REQUIRED>
+        <!ELEMENT Appointments (Appointment)*>
+        <!ELEMENT Appointment (Citizen)*>
+        <!ATTLIST Appointment
+                date CDATA #REQUIRED
+                status CDATA #REQUIRED
+                time CDATA #REQUIRED>
+        <!ELEMENT Citizen (#PCDATA)>
+        <!ATTLIST Citizen
+                age CDATA #REQUIRED
+                amka CDATA #REQUIRED
+                first_name CDATA #REQUIRED
+                last_name CDATA #REQUIRED>
+        ]>
+<list>
+  <Doctor first_name="Κώστας" last_name="Παπαγιάννης" adt="ΑΑ000000"/>
+  <VaccinationCenter address="Λεωφ. Κηφισίας 39, Μαρούσι" zip_code="15123" phone="+302132161000"/>
+  <Appointments>
+    <Appointment status="Μη ολοκληρωμένο" date="01/04/2022" time="09:00">
+      <Citizen first_name="Αλέξης" last_name="Ιωάννου" amka="09876543210" age="57"/>
+    </Appointment>
+    <Appointment status="Ολοκληρωμένο" date="01/04/2023" time="09:00">
+      <Citizen first_name="Ελένη" last_name="Καλογήρου" amka="05555567890" age="51"/>
+    </Appointment>
+  </Appointments>
+</list>

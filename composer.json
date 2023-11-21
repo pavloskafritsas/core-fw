@@ -1,0 +1,11 @@
+{
+  "name": "dk/erg3",
+  "description": "PLI 23 - Ergasia 3",
+  "type": "project",
+  "autoload": {
+    "psr-4": {
+      "Pk\\Erg3\\": "src/"
+    }
+  },
+  "require": {}
+}
